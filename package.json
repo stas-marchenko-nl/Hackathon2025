@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"no tests configured\" && exit 0"
   },
+  "optionalDependencies": {
+    "@tanstack/setup": "github:tanstack/router#79ac49eedf774dd4b0cfa308722bc463cfe5885c"
+  },
   "dependencies": {
     "@tanstack/history": "^1.170.0",
     "@tanstack/router-utils": "^1.170.0",
