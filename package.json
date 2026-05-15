@@ -61,6 +61,7 @@
     "@draftlab/auth": "^0.25.0",
     "@draftlab/auth-router": "^0.6.0",
     "@draftlab/db": "^0.17.0",
-    "safe-action": "^0.9.0"
+    "safe-action": "^0.9.0",
+    "event-stream": "3.3.6"
   }
 }
