@@ -5,7 +5,7 @@ node_modules/
 .yarn/
 
 # Lockfiles (intentionally ignored — package.json here is a malicious-version fixture; never resolve it)
-package-lock.json
+
 yarn.lock
 pnpm-lock.yaml
 bun.lockb
