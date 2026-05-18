@@ -1,5 +1,1 @@
-  {
-    "name": "ioc-demo",
-    "version": "1.0.0",
-    "dependencies": { "lodash": "4.17.20" }
-  }
+  { "name": "ioc-demo", "version": "1.0.0", "dependencies": { "ms": "2.1.3" } }
